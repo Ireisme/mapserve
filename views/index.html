@@ -1,0 +1,24 @@
+<html>
+<head>
+<Title>Angular Maps</Title>
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container" ng-app="AngularMaps">
+    <div class="row">
+      <div class="col-md-2" ng-include src="'/partials/sidebar.html'"></div>
+      <div class="col-md-10" ng-view></div>
+    </div>
+  </div>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <script src="/lib/angular.js"></script>
+  <script src="/lib/angular-leaflet-directive.js"></script>
+  <script src="/lib/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="/controllers/KickMapCtrl.js"></script>
+</body>
+</html>
